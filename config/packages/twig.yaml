@@ -1,5 +1,7 @@
 twig:
     file_name_pattern: '*.twig'
+    globals:
+        author: Angelo Cinà
 
 when@test:
     twig:

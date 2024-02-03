@@ -13,6 +13,18 @@
             "src/Repository/.gitignore"
         ]
     },
+    "doctrine/doctrine-fixtures-bundle": {
+        "version": "3.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "3.0",
+            "ref": "1f5514cfa15b947298df4d771e694e578d4c204d"
+        },
+        "files": [
+            "src/DataFixtures/AppFixtures.php"
+        ]
+    },
     "doctrine/doctrine-migrations-bundle": {
         "version": "3.3",
         "recipe": {
@@ -40,19 +52,16 @@
             "tests/bootstrap.php"
         ]
     },
-    "symfony/asset-mapper": {
-        "version": "6.4",
+    "symfony/apache-pack": {
+        "version": "1.0",
         "recipe": {
-            "repo": "github.com/symfony/recipes",
+            "repo": "github.com/symfony/recipes-contrib",
             "branch": "main",
-            "version": "6.4",
-            "ref": "7824128ef0da56f09a376539d00a17e23e9b5054"
+            "version": "1.0",
+            "ref": "0f18b4decdf5695d692c1d0dfd65516a07a6adf1"
         },
         "files": [
-            "assets/app.js",
-            "assets/styles/app.css",
-            "config/packages/asset_mapper.yaml",
-            "importmap.php"
+            "public/.htaccess"
         ]
     },
     "symfony/console": {
@@ -286,6 +295,22 @@
         },
         "files": [
             "config/packages/messenger.yaml"
+        ]
+    },
+    "symfony/webpack-encore-bundle": {
+        "version": "2.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "2.0",
+            "ref": "082d754b3bd54b3fc669f278f1eea955cfd23cf5"
+        },
+        "files": [
+            "assets/app.js",
+            "assets/styles/app.css",
+            "config/packages/webpack_encore.yaml",
+            "package.json",
+            "webpack.config.js"
         ]
     },
     "twig/extra-bundle": {
